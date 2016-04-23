@@ -20,14 +20,14 @@ define([
 
   function render(locals){
     this.$el.html(this.compiledTemplate());
-    this.renderChart(locals.data);
+    this.renderChart(locals.data.months, 1);
+    this.renderChart(locals.data.weeks, 2);
     return this;
   }
 
-  function renderChart(data){
+  function renderChart(data, index){
     _.defer(function(){
-      console.log('data', data);
-      var placeholder = self.$('.chart-placeholder');
+      var placeholder = self.$('.chart-placeholder'+index);
       placeholder.css({height: '350px'})
       $.plot(placeholder, [ data ], {
         series: {

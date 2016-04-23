@@ -27,7 +27,7 @@ define([
 
   function renderChart(data, index){
     var self = this;
-    _.delay(function(){
+    _.defer(function(){
       var placeholder = self.$('.pie-placeholder'+index);
       placeholder.css({height: '350px', width: '250px'})
       $.plot(placeholder, data, {
@@ -38,7 +38,7 @@ define([
           }
         }
       });
-    }, 10);
+    });
   }
 
 });

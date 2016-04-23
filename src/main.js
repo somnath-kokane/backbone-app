@@ -24,15 +24,20 @@ requirejs.config({
     'underscore': {
       exports: '_'
     },
+    'bootstrap': ['jquery'],
     'flot/jquery.flot': ['jquery'],
-    'flot/jquery.flot.pia': ['flot/jquery.flot']
+    'flot/jquery.flot.pie': ['flot/jquery.flot'],
+    'flot/jquery.flot.category': ['flot/jquery.flot']
   },
   priority: ['jquery']
 });
 
 requirejs([
+  'jquery',
   'app/app',
   'common'
-], function(App){
-  new App();
+], function($, App){
+  $(function(){
+    new App();
+  })
 })

@@ -13,6 +13,7 @@ define([
     ChartsRouter.__super__.initialize.apply(this, arguments);
     this.route('charts/pie', chartsHandler.pieChart);
     this.route('charts/category', chartsHandler.categoryChart);
+    this.route('charts/interacting', chartsHandler.interactingChart);
   }
 
 })

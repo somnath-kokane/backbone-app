@@ -3,7 +3,8 @@ define([
   'underscore',
   'backbone',
   'bootstrap',
-  'text'
+  'text',
+  'flot/jquery.flot'
 ], function(){
 
 })
