@@ -1,0 +1,24 @@
+{
+  "name": "backbone-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "pug-cli": "^0.0.0",
+    "pug": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somnath-kokane/backbone-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/somnath-kokane/backbone-app/issues"
+  },
+  "homepage": "https://github.com/somnath-kokane/backbone-app#readme"
+}
