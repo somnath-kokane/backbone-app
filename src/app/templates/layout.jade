@@ -1,28 +1,2 @@
-nav.navbar.navbar-default.navbar-transparent.navbar-fixed-top.navbar-burger(role='navigation')
-  .container
-    .navbar-header
-      .navbar-toggle#menu-toggle(type='button' data-toggle='collapse' data-target='#example')
-        .sr-only Toggle Navigation
-        .icon-bar.bar1
-        .icon-bar.bar2
-        .icon-bar.bar3
-      a.navbar-brand(href='#') Backbone App
-    .collapse.navbar-collapse
-      ul.nav.navbar-nav
-        li
-          a(href="" data-scroll="true" data-id="#whoWeAre") About
-        li
-          a(href="" data-scroll="true" data-id="#workflow") What We Do
-        li
-          a(href="" data-scroll="true" data-id="#projects") Famous Freebies
-      ul.nav.navbar-nav.navbar-right
-        li.social-links
-          a(href='#')
-            i.fa.fa-facebook-square
-          a(href='#')
-            i.fa.fa-twitter
-          a(href='#')
-            i.fa.fa-google-plus-square
-          a(href='#')
-            i.fa.fa-dribbble
+include ./partials/top-bar.jade
 .container#main-view

@@ -4,7 +4,9 @@ requirejs.config({
     '*': {
       'common': 'src/common',
       'app': 'src/app',
-      'auth': 'src/modules/auth'
+      'auth': 'src/modules/auth',
+      'charts': 'src/modules/charts',
+      'flot': 'bower_components/Flot'
     }
   },
   paths: {
@@ -21,7 +23,9 @@ requirejs.config({
     },
     'underscore': {
       exports: '_'
-    }
+    },
+    'flot/jquery.flot': ['jquery'],
+    'flot/jquery.flot.pia': ['flot/jquery.flot']
   },
   priority: ['jquery']
 });

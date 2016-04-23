@@ -33,7 +33,8 @@ define([
       currentView = view;
       currentView.render(locals);
       this.layout.$('#main-view').html(currentView.$el);
-    } catch(ex){
+    } catch(err){
+      console.error('Error:', err);
       currentView = null;
     }
   }

@@ -1,7 +1,8 @@
 define([
   'backbone',
-  'app/router'
-], function(Backbone, AppRouter){
+  'app/router',
+  'charts/router'
+], function(Backbone, AppRouter, ChartRouter){
 
   function App(){
     this.initialize.apply(this, arguments);
@@ -13,6 +14,7 @@ define([
 
   function initialize(){
     new AppRouter();
+    new ChartRouter();
     Backbone.history.start();
   }
 
